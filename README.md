@@ -93,7 +93,7 @@ python -m venv .venv
 Windows (PowerShell):
 
 ```powershell
-.venv\Scripts\Activate.ps1
+.venv\Scripts\Activate
 ```
 
 Linux ou macOS:
@@ -115,6 +115,12 @@ pip install -r requirements.txt
 Crie o banco e as tabelas executando o script `Produtos_Api/banco.sql`.
 
 Pelo terminal, a partir da raiz do repositório:
+
+```powershell
+mysql -u root -p -e "source Produtos_Api/banco.sql"
+```
+
+Prompt de Comando (cmd), Linux ou macOS:
 
 ```bash
 mysql -u root -p < Produtos_Api/banco.sql
